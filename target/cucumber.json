@@ -1,0 +1,417 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 63,
+        "name": "test Create Orders POST request",
+        "description": "",
+        "id": "automation-tests-for-placing-new-orders-and-cancel-the-orders;test-create-orders-post-request;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2289002591,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I call \u0027gemini new order create and cancel\u0027 webservice",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gemini new order create and cancel",
+                  "offset": 8
+                }
+              ],
+              "location": "Stepformat.callWebServicesAPI(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "nonce",
+                  "12345"
+                ]
+              },
+              {
+                "cells": [
+                  "symbol",
+                  "btcusd"
+                ]
+              },
+              {
+                "cells": [
+                  "amount",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "client_order_id",
+                  "1234"
+                ]
+              },
+              {
+                "cells": [
+                  "side",
+                  "buy"
+                ]
+              },
+              {
+                "cells": [
+                  "type",
+                  "exchange limit"
+                ]
+              },
+              {
+                "cells": [
+                  "gemini_api_secret",
+                  "4YgPvW19cb9Ej3GbjnPtNFSxZf6M"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Run_Orders_POST"
+          },
+          {
+            "name": "@Run_Orders_POST_1"
+          }
+        ]
+      },
+      {
+        "line": 64,
+        "name": "test Create Orders POST request",
+        "description": "",
+        "id": "automation-tests-for-placing-new-orders-and-cancel-the-orders;test-create-orders-post-request;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Status code : 400\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.WebServiceDriver.TMRESTCall(WebServiceDriver.java:55)\r\n\tat com.NewOrderAPI.ordersCreate(NewOrderAPI.java:123)\r\n\tat com.WebServiceCalls.execGeminiRESTAPI(WebServiceCalls.java:40)\r\n\tat com.WebServiceCalls.executeRESTAPI(WebServiceCalls.java:26)\r\n\tat com.Stepformat.callWebServicesAPI(Stepformat.java:17)\r\n\tat ✽.I call \u0027gemini new order create and cancel\u0027 webservice(file:src/test/resources/com/features/geminiassignment.feature:49)\r\n",
+              "duration": 236951782,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "I call \u0027gemini new order create and cancel\u0027 webservice",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gemini new order create and cancel",
+                  "offset": 8
+                }
+              ],
+              "location": "Stepformat.callWebServicesAPI(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "nonce",
+                  "12346"
+                ]
+              },
+              {
+                "cells": [
+                  "symbol",
+                  "Ether"
+                ]
+              },
+              {
+                "cells": [
+                  "amount",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "client_order_id",
+                  "2134"
+                ]
+              },
+              {
+                "cells": [
+                  "side",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "type",
+                  "exchange limit"
+                ]
+              },
+              {
+                "cells": [
+                  "gemini_api_secret",
+                  "4YgPvW19cb9Ej3GbjnPtNFSxZf6M"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Run_Orders_POST"
+          },
+          {
+            "name": "@Run_Orders_POST_1"
+          }
+        ]
+      },
+      {
+        "line": 65,
+        "name": "test Create Orders POST request",
+        "description": "",
+        "id": "automation-tests-for-placing-new-orders-and-cancel-the-orders;test-create-orders-post-request;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Status code : 400\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.WebServiceDriver.TMRESTCall(WebServiceDriver.java:55)\r\n\tat com.NewOrderAPI.ordersCreate(NewOrderAPI.java:123)\r\n\tat com.WebServiceCalls.execGeminiRESTAPI(WebServiceCalls.java:40)\r\n\tat com.WebServiceCalls.executeRESTAPI(WebServiceCalls.java:26)\r\n\tat com.Stepformat.callWebServicesAPI(Stepformat.java:17)\r\n\tat ✽.I call \u0027gemini new order create and cancel\u0027 webservice(file:src/test/resources/com/features/geminiassignment.feature:49)\r\n",
+              "duration": 228953253,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "I call \u0027gemini new order create and cancel\u0027 webservice",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gemini new order create and cancel",
+                  "offset": 8
+                }
+              ],
+              "location": "Stepformat.callWebServicesAPI(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "nonce",
+                  "12347"
+                ]
+              },
+              {
+                "cells": [
+                  "symbol",
+                  "Ether,btcusd"
+                ]
+              },
+              {
+                "cells": [
+                  "amount",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "client_order_id",
+                  "2134"
+                ]
+              },
+              {
+                "cells": [
+                  "side",
+                  "sell"
+                ]
+              },
+              {
+                "cells": [
+                  "type",
+                  "exchange limit"
+                ]
+              },
+              {
+                "cells": [
+                  "gemini_api_secret",
+                  "4YgPvW19cb9Ej3GbjnPtNFSxZf6M"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Run_Orders_POST"
+          },
+          {
+            "name": "@Run_Orders_POST_1"
+          }
+        ]
+      },
+      {
+        "line": 66,
+        "name": "test Create Orders POST request",
+        "description": "",
+        "id": "automation-tests-for-placing-new-orders-and-cancel-the-orders;test-create-orders-post-request;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Status code : 400\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat com.WebServiceDriver.TMRESTCall(WebServiceDriver.java:55)\r\n\tat com.NewOrderAPI.ordersCreate(NewOrderAPI.java:123)\r\n\tat com.WebServiceCalls.execGeminiRESTAPI(WebServiceCalls.java:40)\r\n\tat com.WebServiceCalls.executeRESTAPI(WebServiceCalls.java:26)\r\n\tat com.Stepformat.callWebServicesAPI(Stepformat.java:17)\r\n\tat ✽.I call \u0027gemini new order create and cancel\u0027 webservice(file:src/test/resources/com/features/geminiassignment.feature:49)\r\n",
+              "duration": 216548913,
+              "status": "failed"
+            },
+            "line": 49,
+            "name": "I call \u0027gemini new order create and cancel\u0027 webservice",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gemini new order create and cancel",
+                  "offset": 8
+                }
+              ],
+              "location": "Stepformat.callWebServicesAPI(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "request",
+                  "/v1/order/new"
+                ]
+              },
+              {
+                "cells": [
+                  "nonce",
+                  "12348"
+                ]
+              },
+              {
+                "cells": [
+                  "symbol",
+                  "Ether,btcusd"
+                ]
+              },
+              {
+                "cells": [
+                  "amount",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "price",
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "client_order_id",
+                  "2134"
+                ]
+              },
+              {
+                "cells": [
+                  "side",
+                  ""
+                ]
+              },
+              {
+                "cells": [
+                  "type",
+                  "exchange limit"
+                ]
+              },
+              {
+                "cells": [
+                  "gemini_api_secret",
+                  "4YgPvW19cb9Ej3GbjnPtNFSxZf6M"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Run_Orders_POST"
+          },
+          {
+            "name": "@Run_Orders_POST_1"
+          }
+        ]
+      }
+    ],
+    "name": "Automation tests for placing new orders and cancel the orders",
+    "description": "  Description: The purpose of these tests are to cover customer place new order and cancel the orders",
+    "id": "automation-tests-for-placing-new-orders-and-cancel-the-orders",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/features/geminiassignment.feature",
+    "tags": [
+      {
+        "name": "@Run_Orders_POST",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
